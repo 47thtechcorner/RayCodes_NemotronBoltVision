@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual-Mode Screen Privacy Sentinel - Real IDE Security Audit Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #090608;
+      --bg-card: #130c11;
+      --bg-card-alt: #1c1219;
+      --border: rgba(244, 63, 94, 0.3);
+      --accent-red: #f43f5e;
+      --accent-amber: #f59e0b;
+      --accent-lime: #10b981;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg-canvas); color: var(--text-main); font-family: var(--font); padding: 32px 20px; line-height: 1.5; }
+    .container { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+    .header-bar { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; }
+    .header-info h1 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+    .header-info h1 span { color: var(--accent-red); }
+    .header-info p { font-size: 13.5px; color: var(--text-muted); }
+    .status-badge { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--accent-red); background: rgba(244, 63, 94, 0.15); padding: 6px 14px; border-radius: 999px; border: 1px solid var(--accent-red); text-transform: uppercase; }
+    
+    .alert-banner { background: linear-gradient(90deg, rgba(244, 63, 94, 0.2), rgba(245, 158, 11, 0.1)); border: 1px solid var(--accent-red); border-radius: 12px; padding: 18px 22px; display: flex; gap: 14px; align-items: center; }
+    .alert-icon { font-size: 28px; }
+    .alert-text h3 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .alert-text p { font-size: 13px; color: #cbd5e1; }
+
+    .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .screen-view { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+    .screen-view h2 { font-size: 15px; font-weight: 700; color: #fff; }
+    .img-box { border-radius: 8px; overflow: hidden; background: #000; border: 1px solid rgba(244, 63, 94, 0.4); position: relative; }
+    .img-box img { width: 100%; height: auto; display: block; }
+    
+    .findings-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+    .findings-card h2 { font-size: 15px; font-weight: 700; color: #fff; }
+    .secret-list { display: flex; flex-direction: column; gap: 12px; }
+    .secret-item { background: var(--bg-card-alt); border-left: 3px solid var(--accent-red); padding: 12px 14px; border-radius: 6px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+    .secret-item .title { font-weight: 700; color: #fff; display: flex; justify-content: space-between; }
+    .secret-item .key-val { font-family: var(--font-mono); color: var(--accent-red); font-size: 11.5px; background: rgba(0,0,0,0.4); padding: 4px 8px; border-radius: 4px; word-break: break-all; }
+    .secret-item .loc { color: var(--text-muted); font-size: 11.5px; }
+
+    .remediation-box { background: var(--bg-card-alt); border-radius: 10px; padding: 16px; }
+    .remediation-box h3 { font-size: 13.5px; font-weight: 700; color: var(--accent-amber); margin-bottom: 8px; }
+    .remediation-box ul { list-style: disc; padding-left: 20px; font-size: 12.5px; color: #cbd5e1; display: flex; flex-direction: column; gap: 6px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header-bar">
+    <div class="header-info">
+      <h1>Dual-Mode Screen <span>Privacy Sentinel</span></h1>
+      <p>VS Code Developer IDE Spatial Secret Leak Detection (Nemotron 3.5 Bolt mmproj)</p>
+    </div>
+    <div class="status-badge">Hazard Level: Critical</div>
+  </div>
+
+  <div class="alert-banner">
+    <span class="alert-icon">🚨</span>
+    <div class="alert-text">
+      <h3>Active Screen Exposure Detected: 4 Critical Secrets Found</h3>
+      <p>Do NOT share screen or broadcast. Revoke exposed credentials immediately before continuing.</p>
+    </div>
+  </div>
+
+  <div class="main-grid">
+    <div class="screen-view">
+      <h2>Audited Developer IDE Workspace</h2>
+      <div class="img-box">
+        <img src="../inputs/3_code_editor_secrets.png" alt="Audited VS Code Workspace">
+      </div>
+      <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+        Spatial Scanning Zone: [X: 340-950, Y: 180-530] inside active editor tab
+      </div>
+    </div>
+
+    <div class="findings-card">
+      <h2>Flagged Credential Detections</h2>
+      <div class="secret-list">
+        <div class="secret-item"><div class="title"><span>AWS IAM Access Key ID</span><span style="color: var(--accent-red);">CRITICAL</span></div><div class="key-val">AKIAIOSFODNN7EXAMPLE_SECRET_88412948</div><div class="loc">credentials.config.ts (Line 4) • Full Cloud Admin Privileges</div></div><div class="secret-item"><div class="title"><span>AWS Secret Access Key</span><span style="color: var(--accent-red);">CRITICAL</span></div><div class="key-val">wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY</div><div class="loc">credentials.config.ts (Line 5) • Unrestricted API Signing Authority</div></div><div class="secret-item"><div class="title"><span>Stripe Live Secret Key</span><span style="color: var(--accent-red);">CRITICAL</span></div><div class="key-val">sk_test_51M0_REDACTED_MOCK_KEY_76543210zyxwvuts</div><div class="loc">credentials.config.ts (Line 8) • Production Payment Gateway Authority</div></div><div class="secret-item"><div class="title"><span>JWT Session Token</span><span style="color: var(--accent-red);">HIGH</span></div><div class="key-val">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.payload</div><div class="loc">credentials.config.ts (Line 9) • User Authentication Signature</div></div>
+      </div>
+
+      <div class="remediation-box">
+        <h3>Mandatory Remediation Steps</h3>
+        <ul>
+          <li>Rotate AWS IAM Access Key and Secret Key in AWS IAM Management Console immediately.</li>
+          <li>Invalidate Stripe Live Secret Key and generate a restricted key with minimal scopes.</li>
+          <li>Rotate JWT signing secret and invalidate active sessions across all active tokens.</li>
+          <li>Move credentials into a gitignored .env file and install a pre-commit secret scanner.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

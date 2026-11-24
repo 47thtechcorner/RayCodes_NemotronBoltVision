@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide & Architecture Deck Synthesizer - Real AWS Serverless AI Briefing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #060910;
+      --bg-card: #0b1220;
+      --bg-card-alt: #101a2e;
+      --border: rgba(56, 189, 248, 0.25);
+      --accent-blue: #38bdf8;
+      --accent-green: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-yellow: #ffd400;
+      --accent-purple: #c084fc;
+      --text-main: #ffffff;
+      --text-muted: #94a3b8;
+      --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg-canvas); color: var(--text-main); font-family: var(--font); padding: 32px 20px; line-height: 1.5; }
+    .container { max-width: 1140px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+    .header-bar { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; }
+    .header-info h1 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+    .header-info h1 span { color: var(--accent-blue); }
+    .header-info p { font-size: 13.5px; color: var(--text-muted); }
+    .status-badge { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--accent-blue); background: rgba(56, 189, 248, 0.12); padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(56, 189, 248, 0.35); text-transform: uppercase; }
+    
+    .slide-preview-box { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+    .slide-preview-box h2 { font-size: 15px; font-weight: 700; color: #fff; }
+    .img-wrap { border-radius: 8px; overflow: hidden; background: #000; display: flex; justify-content: center; border: 1px solid rgba(255,255,255,0.1); }
+    .img-wrap img { width: 100%; max-height: 440px; object-fit: contain; }
+    
+    .tiers-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .tier-card { background: var(--bg-card); border-radius: 14px; padding: 18px; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 10px; }
+    .tier-card.ingress { border-top: 3px solid var(--accent-blue); }
+    .tier-card.compute { border-top: 3px solid var(--accent-green); }
+    .tier-card.models { border-top: 3px solid var(--accent-purple); }
+    .tier-card.storage { border-top: 3px solid var(--accent-amber); }
+    .tier-title { font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+    .tier-list { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; color: var(--text-muted); }
+    .tier-list li { background: var(--bg-card-alt); padding: 8px 10px; border-radius: 6px; color: #e2e8f0; }
+
+    .decisions-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 22px; }
+    .decisions-card h2 { font-size: 16px; font-weight: 700; margin-bottom: 14px; color: var(--accent-yellow); }
+    .decision-items { display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; }
+    .decision-row { display: flex; gap: 12px; align-items: flex-start; }
+    .decision-num { font-family: var(--font-mono); font-weight: 700; color: var(--accent-blue); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header-bar">
+    <div class="header-info">
+      <h1>Slide & Architecture <span>Deck Synthesizer</span></h1>
+      <p>Real-World Enterprise Cloud Architecture Decompiled via NVIDIA Nemotron 3.5 Bolt mmproj</p>
+    </div>
+    <div class="status-badge">Topology: AWS Serverless Event-Driven AI</div>
+  </div>
+
+  <div class="slide-preview-box">
+    <h2>Ingested AWS Enterprise Serverless AI Architecture Diagram</h2>
+    <div class="img-wrap">
+      <img src="../inputs/2_cloud_architecture.png" alt="AWS Cloud Architecture Slide">
+    </div>
+  </div>
+
+  <div class="tiers-grid">
+    <div class="tier-card ingress">
+      <div class="tier-title" style="color: var(--accent-blue);">🌐 Scheduling & Ingress</div>
+      <ul class="tier-list">
+        <li>Amazon EventBridge Scheduler (Bedtime Trigger)</li><li>AWS App Runner (Web App Application Frontend)</li><li>Amazon Cognito (User Auth & Access)</li>
+      </ul>
+    </div>
+    <div class="tier-card compute">
+      <div class="tier-title" style="color: var(--accent-green);">⚙️ Serverless Compute Mesh</div>
+      <ul class="tier-list">
+        <li>AWS Lambda Functions (create-story, process-image, generate-audio)</li><li>Amazon EventBridge (Event Fan-out Bus)</li>
+      </ul>
+    </div>
+    <div class="tier-card models">
+      <div class="tier-title" style="color: var(--accent-purple);">🧠 AI Generation Tier</div>
+      <ul class="tier-list">
+        <li>OpenAI ChatGPT (Story & Character Generation API)</li><li>OpenAI DALL-E (Bedtime Story Illustration Engine)</li><li>Amazon Polly (Text-to-Speech Bedtime Story Narration)</li>
+      </ul>
+    </div>
+    <div class="tier-card storage">
+      <div class="tier-title" style="color: var(--accent-amber);">💾 Persistence & Delivery</div>
+      <ul class="tier-list">
+        <li>Amazon DynamoDB (Story Characters, Scenes, Metadata)</li><li>Amazon S3 (Story Illustrations & Audio Storage)</li><li>Amazon SES (Automated Email Story Delivery)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="decisions-card">
+    <h2>Architectural Decision Logs & Data Flow Analysis</h2>
+    <div class="decision-items">
+      <div class="decision-row"><span class="decision-num">01.</span><span>Event-driven decoupling: EventBridge Scheduler triggers story creation, fanning out asynchronous tasks to image, audio, and email workers.</span></div><div class="decision-row"><span class="decision-num">02.</span><span>Multi-modal AI integration: Uses OpenAI ChatGPT for text, DALL-E for visual scenes, and Amazon Polly for voice narration.</span></div><div class="decision-row"><span class="decision-num">03.</span><span>Scalable serverless storage: DynamoDB stores character state and scene metadata while S3 archives generated audio and images.</span></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
